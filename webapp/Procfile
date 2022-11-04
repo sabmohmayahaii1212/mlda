@@ -1,2 +1,2 @@
 web:gunicorn app:app
-port = int(os.environ.get('PORT'))
+

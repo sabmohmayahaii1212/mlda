@@ -1,6 +1,9 @@
 
 import flask
 import pickle
+import os
+port = int(os.environ.get("PORT", 5000))
+app.run(host='0.0.0.0', port=port)
 # Use pickle to load in the pre-trained model.
 with open(f'../webapp/model/crop_data.pkl', 'rb') as f:
     model = pickle.load(f)

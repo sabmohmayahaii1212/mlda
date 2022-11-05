@@ -1,7 +1,7 @@
 
 import flask
 import pickle
-
+import os
 
 # Use pickle to load in the pre-trained model.
 with open(f'../webapp/model/crop_data.pkl', 'rb') as f:

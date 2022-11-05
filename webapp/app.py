@@ -1,7 +1,7 @@
 
 import flask
 import pickle
-import os
+
 
 # Use pickle to load in the pre-trained model.
 with open(f'../webapp/model/crop_data.pkl', 'rb') as f:
@@ -27,6 +27,7 @@ def main():
                                      )
        if __name__ == '__main__':
     # Bind to PORT if defined, otherwise default to 5000.
-    port = int(os.environ.get('PORT', 5000))
-    app.run(host='0.0.0.0', port=port)
+    #port = int(os.environ.get('PORT', 5000))
+    
+    app.run(host='127.0.0.1', port=port)
    
